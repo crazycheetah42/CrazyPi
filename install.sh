@@ -17,6 +17,8 @@ cp -r dotconfig/* /home/$username/.config/
 cp background.jpg /home/$username/Pictures/background.jpg
 mv user-dirs.dirs /home/$username/.config
 chown -R $username:$username /home/$username
+chmod +x /home/$username/.config/bspwm/bspwmrc
+chmod +x /home/$username/.config/sxhkd/sxhkdrc
 
 # Installing Essential Programs 
 apt install feh bspwm xsecurelock sxhkd alacritty rofi polybar picom thunar lxpolkit x11-xserver-utils unzip wget curl build-essential pulseaudio pavucontrol -y
