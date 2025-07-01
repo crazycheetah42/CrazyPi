@@ -1,0 +1,77 @@
+[window]
+opacity = 0.9
+padding = { x = 15, y = 15 }
+decorations = "None"
+dynamic_padding = false
+dimensions = { columns = 250, lines = 80 }
+
+[font]
+normal = { family = "FiraCode Nerd Font Mono", style = "Regular" }
+bold = { family = "FiraCode Nerd Font Mono", style = "Bold" }
+italic = { family = "FiraCode Nerd Font Mono", style = "Italic" }
+bold_italic = { family = "FiraCode Nerd Font Mono", style = "Bold Italic" }
+size = 16.0
+
+[cursor]
+style = { shape = "Block", blinking = "On" }
+blink_interval = 500
+blink_timeout = 15
+unfocused_hollow = true
+
+[scrolling]
+history = 2000
+multiplier = 5
+
+[colors.primary]
+background = "#202020"
+foreground = "#d0d0d0"
+
+[colors.cursor]
+text = "#202020"
+cursor = "#d0d0d0"
+
+[colors.selection]
+text = "#202020"
+background = "#303030"
+
+[colors.normal]
+black =   "#151515"
+red =     "#ac4142"
+green =   "#7e8d50"
+yellow =  "#e5b566"
+blue =    "#6c99ba"
+magenta = "#9e4e85"
+cyan =    "#7dd5cf"
+white =   "#d0d0d0"
+
+[colors.bright]
+black =   "#505050"
+red =     "#ac4142"
+green =   "#7e8d50"
+yellow =  "#e5b566"
+blue =    "#6c99ba"
+magenta = "#9e4e85"
+cyan =    "#7dd5cf"
+white =   "#f5f5f5"
+
+[keyboard]
+bindings = [
+  { key = "V", mods = "Super", action = "Paste" },
+  { key = "S", mods = "Control|Shift", action = "PasteSelection" },
+  { key = "C", mods = "Super", action = "Copy" },
+  { key = "Insert", mods = "Shift", action = "PasteSelection" },
+
+  { key = "Up", mods = "Control|Shift", action = "ScrollLineUp" },
+  { key = "Down", mods = "Control|Shift", action = "ScrollLineDown" },
+  { key = "PageUp", mods = "Control|Shift", action = "ScrollPageUp" },
+  { key = "PageDown", mods = "Control|Shift", action = "ScrollPageDown" },
+  { key = "Home", mods = "Control|Shift", action = "ScrollToTop" },
+  { key = "End", mods = "Control|Shift", action = "ScrollToBottom" },
+
+  { key = "Up", mods = "Control|Shift", action = "IncreaseFontSize" },
+  { key = "Down", mods = "Control|Shift", action = "DecreaseFontSize" },
+  { key = "Back", mods = "Control|Shift", action = "ResetFontSize" }
+]
+
+[shell]
+program = "bash"  # or your preferred shell
